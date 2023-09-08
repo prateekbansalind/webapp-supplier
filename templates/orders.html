@@ -1,0 +1,28 @@
+{% extends "shared_supplier.html" %}
+
+{% block content %}
+    <h1 class="text-center">Orders</h1>
+    <p class="lead text-center">View your pending and processed orders below.</p>
+    
+    <!-- Placeholder for orders -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample Row -->
+            <tr>
+                <td>12345</td>
+                <td>Sample Product 1</td>
+                <td>100</td>
+                <td>Pending</td>
+            </tr>
+            <!-- You can populate this table with actual data using Flask's templating engine -->
+        </tbody>
+    </table>
+{% endblock %}
